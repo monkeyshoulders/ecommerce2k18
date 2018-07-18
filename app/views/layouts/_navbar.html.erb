@@ -19,10 +19,8 @@
            <span class="caret"></span></a>
          <ul class="dropdown-menu">
            <% @categories.each do |category| %>
-             <li>
-               <% link_to category.name, categorical_path(cat_id: category.id) %>
-               </li>
-             <% end %>
+             <li><%= link_to category.name, categorical_path(cat_id: category.id) %></li>
+           <% end %>
            </ul>
          </li>
          <li class="dropdown">
